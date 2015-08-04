@@ -1,0 +1,28 @@
+{
+  "name": "react-novice",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/build.js",
+  "scripts": {
+    "build": "node_modules/browserify/bin/cmd.js -t reactify lib/main.js > build/build.js",
+    "start": "node_modules/watchify/bin/cmd.js -t reactify lib/main.js -o build/build.js -v -d"
+  },
+  "author": "Vadim Chernysh",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chernysh/react-novice.git"
+  },
+  "devDependencies": {
+    "browserify": "^10.1.3",
+    "less": "^2.5.0",
+    "reactify": "^1.1.0",
+    "watchify": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "moment": "^2.10.3",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
+  }
+}
